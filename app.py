@@ -80,7 +80,7 @@ def home():
 
     # data = jsonify(results)
 
-    return {"refId": str(refId), "results":results}
+    return {"refId": str(refId), "crresults":results}
 
 
 def add2queue(refId, scene):
@@ -106,5 +106,5 @@ def add2queue(refId, scene):
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(host="0.0.0.0",debug=False)
 
